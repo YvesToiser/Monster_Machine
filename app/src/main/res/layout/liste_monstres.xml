@@ -4,5 +4,9 @@
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/text1"
     android:layout_width="match_parent"
-    android:layout_height="30dp"
-    android:text="TextView" />
+    android:layout_height="100px"
+    android:text="TextView"
+    android:layout_margin="20px"
+    android:textSize="60px"
+    android:textAlignment="center"
+        />

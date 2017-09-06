@@ -14,16 +14,24 @@
         tools:layout_editor_absoluteX="8dp"
         android:weightSum="1">
 
-        <ImageView
+        ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="100dp"
+            app:srcCompat="@drawable/logo_main"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             app:srcCompat="@drawable/logo_main" />
 
         <ListView
             android:id="@+id/monsterList"
             android:layout_width="match_parent"
-            android:layout_height="111dp" />
+            android:layout_height="fill_parent"
+            android:textAlignment="center"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
