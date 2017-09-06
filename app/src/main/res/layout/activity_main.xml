@@ -21,7 +21,7 @@
             app:srcCompat="@drawable/logo_main" />
 
         <ListView
-            android:id="@+id/listView"
+            android:id="@+id/monsterList"
             android:layout_width="match_parent"
             android:layout_height="111dp" />
     </LinearLayout>

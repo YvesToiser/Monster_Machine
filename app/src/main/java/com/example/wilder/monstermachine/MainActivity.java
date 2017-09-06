@@ -3,16 +3,14 @@ package com.example.wilder.monstermachine;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity  {
 
-    private ListView mListView;
-    private String[] monstres = new String[]{
-          "aezrt", "dsfsf"
+    private ListView listView;
+
+    private String[] monsters = new String[]{
     };
 
     @Override
@@ -20,10 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mListView = (ListView) findViewById(R.id.listView);
+        monsters = getResources().getStringArray(R.array.monsters_array);
+        listView = (ListView) findViewById(R.id.monsterList);
 
         final ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this,
-        android.R.layout.simple_list_item_1, monstres);
-        mListView.setAdapter(adapter);
+                R.layout.liste_monstres, monsters);
+        listView.setAdapter(adapter);
     }
+
 }
