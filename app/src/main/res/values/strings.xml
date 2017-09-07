@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="app_name">Monster Machine</string>
-<string-array name="monsters_array">
-    <item>Shuttle Badminton</item>
-    <item>Tennis</item>
-    <item>FootBall</item>
-    <item>Basket Ball</item>
-    <item>Table Tennis</item>
-    <item>Chess</item>
-    <item>Hockey</item>
-</string-array>
+    <string name="app_name">Monster Machine</string>
+    <string name="sealion">Sealion</string>
+    <string name="choco_bunny">Choco Bunny</string>
+    <string name="panda_claus">Panda Claus</string>
+    <string name="metaselash">Metaselash</string>
+    <string name="mechamancer">Mechamancer</string>
+    <string name="komocat">Komocat</string>
+    <string name="fenix">Fenix</string>
+    <string name="thunder_eagle">Thunder Eagle</string>
+    <string name="pegasus">Pegasus</string>
+    <string name="obsidia">Obsidia</string>
+    <string name="value_zero">0</string>
 </resources>

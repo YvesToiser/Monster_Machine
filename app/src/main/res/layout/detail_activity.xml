@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.toyo.slideshowwallpaper.MainActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Nom_monstre"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="@string/sealion"
+            android:textSize="30sp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ViewFlipper
+                android:id="@+id/bckgrndViewFlipper1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/evolution_0"
+                    android:layout_width="132dp"
+                    android:layout_height="156dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sealion_0" />
+
+                <ImageView
+                    android:id="@+id/evolution_1"
+                    android:layout_width="132dp"
+                    android:layout_height="156dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sealion_1" />
+
+                <ImageView
+                    android:id="@+id/evolution_2"
+                    android:layout_width="132dp"
+                    android:layout_height="156dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sealion_2" />
+
+                <ImageView
+                    android:id="@+id/evolution_3"
+                    android:layout_width="132dp"
+                    android:layout_height="156dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sealion_3" />
+
+            </ViewFlipper>
+
+            <Space
+                android:layout_width="42dp"
+                android:layout_height="156dp" />
+
+            <ImageView
+                android:id="@+id/Fire"
+                android:layout_width="wrap_content"
+                android:layout_height="156dp"
+                app:srcCompat="@drawable/bte_fire" />
+
+            <ImageView
+                android:id="@+id/Water"
+                android:layout_width="wrap_content"
+                android:layout_height="156dp"
+                app:srcCompat="@drawable/bte_water" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="156dp" />
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                    app:srcCompat="@drawable/stat_stamina"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="22dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/stat_power"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                    app:srcCompat="@drawable/stat_life" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                    app:srcCompat="@drawable/stat_speed" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/value_force"
+                    android:layout_width="59dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center"
+                    android:text="@string/value_zero"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/value_health"
+                    android:layout_width="59dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/value_zero"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/value_force" />
+
+                <TextView
+                    android:id="@+id/value_speed"
+                    android:layout_width="59dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/value_zero"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/value_health" />
+
+                <TextView
+                    android:id="@+id/value_sta"
+                    android:layout_width="59dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/value_zero"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/value_speed" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
